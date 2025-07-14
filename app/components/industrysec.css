@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.industries {
+    padding: 100px 20px;
+    background-color: #f8f9fb;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.industries-heading {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    color: #0a0a0a;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Desktop: 3 columns */
+    gap: 30px;
+}
+
+.industry-card {
+    border: 1px solid var(--200, #AEBDEA);
+    border-radius: 16px;
+    padding: 60px 30px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-4px);
+}
+
+.industry-icon {
+    height: 130px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.industry-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0a0a0a;
+    text-align: left;
+}
+
+.industry-desc {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+    .industries-heading {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .industry-card {
+        padding: 50px 24px;
+    }
+
+    .industry-title {
+        font-size: 22px;
+    }
+
+    .industry-desc {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (≤640px) */
+@media (max-width: 640px) {
+    .industries-heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .industries {
+        padding: 40px 28px;
+    }
+
+    .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .industry-card {
+        padding: 40px 20px;
+    }
+
+    .industry-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .industry-desc {
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    .industry-icon {
+        height: 100px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap");
+
+.navbar {
+    background-color: #fff;
+    padding: 16px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #d7def4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 900;
+    color: #0a0a0a;
+    letter-spacing: 1px;
+    font-family: "Karantina", cursive;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #1f1f1f;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.arrow-icon {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: #1f1f1f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.demo-btn {
+    background-color: #3559c7;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid #3559c7;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo-btn:hover {
+    background-color: #fff;
+    color: #3559c7;
+    border: 2px solid #3559c7;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -18px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px 16px;
+    margin-top: 12px;
+    min-width: 340px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #c0d4f9;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+
+
+.dropdown-img {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.dropdown-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 0px;
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px dashed #c0d4f9;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-card span {
+    padding-bottom: 15px;
+}
+
+/* .dropdown-card:hover {
+  transform: translateY(-2px);
+} */
+
+.dropdown-arrow {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.blue-card {
+    background-color: #e0e7ff;
+}
+
+.cream-card {
+    background-color: #fbf7f2;
+}
+
+.card-icon {
+    font-size: 26px;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-left {
+        gap: 0;
+    }
+}
+
+
+/* Hamburger styles */
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    color: #1f1f1f;
+}
+
+/* Mobile menu hidden by default */
+.nav-actions-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px;
+        border-top: 1px solid #ccc;
+        z-index: 999;
+    }
+
+    .navbar-container {
+        padding: 0 25px;
+    }
+
+    .demo-btn {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .login-btn {
+        text-align: left;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-actions-mobile {
+        margin: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .nav-actions-mobile {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        left: 0;
+        margin-top: 12px;
+        min-width: 100%;
+        border-radius: 12px;
+        padding: 16px;
+    }
+}

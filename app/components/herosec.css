@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.hero-section {
+  font-family: "Poppins", sans-serif;
+  padding: 100px 20px 60px;
+  text-align: center;
+  backdrop-filter: blur(200px);
+  background-image: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1752494190/Blur_pyt8ba.png');
+  margin-top: 60px;
+}
+
+.hero-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.hero-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.hero-subtext {
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #2d60f6;
+  padding: 12px 24px;
+  font-size: 14px;
+  border: 2px solid #2d60f6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #2d60f6;
+  color: #fff;
+}
+
+.btn-solid {
+  background-color: #2d60f6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  border: 2px solid #2d60f6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-solid:hover {
+  background-color: #fff;
+  color: #2d60f6;
+  border: 2px solid #2d60f6;
+}
+
+/* Trusted logos */
+.trusted {
+  padding-top: 40px;
+}
+
+.trusted-heading {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.brand-logo img {
+  height: auto;
+  width: 150px;
+  opacity: 0.95;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.brand-logo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 80px 20px 50px;
+  }
+
+  .hero-heading h1 {
+    font-size: 42px;
+  }
+
+  .brands-wrapper {
+    gap: 32px;
+  }
+
+  .brand-logo img {
+    width: 120px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .hero-heading h1 {
+    font-size: 32px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .brand-logo img {
+    width: 100px;
+  }
+}
