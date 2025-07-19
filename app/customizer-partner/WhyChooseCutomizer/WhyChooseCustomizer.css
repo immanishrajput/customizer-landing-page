@@ -1,0 +1,189 @@
+.why-section {
+  background-color: #f8fafa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.why-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+.why-header p {
+  font-size: 20px;
+  color: #2B353B;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.why-card {
+  border-radius: 12px;
+  padding: 20px 20px 30px;
+  text-align: center;
+}
+
+.why-icon {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.why-icon img {
+  width: 54px;
+  height: 54px;
+}
+
+.why-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2B353B;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #2B353B;
+  line-height: 1.6;
+}
+
+.trusted {
+  padding-top: 80px;
+}
+
+.trusted-heading {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.brand-logo img {
+  height: auto;
+  width: 150px;
+  opacity: 0.95;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.brand-logo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* ========== Responsive Adjustments ========== */
+
+@media screen and (max-width: 1024px) {
+  .why-header h2 {
+    font-size: 36px;
+  }
+
+  .why-header p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+  }
+
+  .brand-logo img {
+    width: 120px;
+  }
+
+  .brands-wrapper {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .why-section {
+    padding: 50px 16px;
+  }
+
+  .why-header h2 {
+    font-size: 30px;
+  }
+
+  .why-header p {
+    font-size: 16px;
+  }
+
+  .why-card {
+    padding: 16px 16px 24px;
+  }
+
+  .why-card h3 {
+    font-size: 18px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+  }
+
+  .brand-logo img {
+    width: 100px;
+  }
+
+  .trusted-heading {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-header h2 {
+    font-size: 26px;
+  }
+
+  .why-header p {
+    font-size: 15px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+  }
+
+  .brand-logo img {
+    width: 90px;
+  }
+
+  .trusted-heading {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .brands-wrapper {
+    gap: 24px;
+  }
+}

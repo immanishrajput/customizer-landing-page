@@ -1,8 +1,8 @@
 import {
   FaInstagram,
   FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
+  FaFacebook,
+  FaLinkedin,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -22,21 +22,21 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Case Studies</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Press</a></li>
+            <li><a href="#">Become a Partner</a></li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h3>Customizer</h3>
           <ul>
-            <li><a href="#">Start Customizing</a></li>
-            <li><a href="#">T-Shirt Designer</a></li>
-            <li><a href="#">Ring Engraver</a></li>
-            <li><a href="#">Book Cover Maker</a></li>
-            <li><a href="#">Bulk Orders</a></li>
+            <li><a href="#">Toys & Kinds Products</a></li>
+            <li><a href="#">Bakery</a></li>
+            <li><a href="#">Fashion & Apparel</a></li>
+            <li><a href="#">Jewelry & Accessories</a></li>
+            <li><a href="#">Gifting & Occasion-Based</a></li>
           </ul>
         </div>
 
@@ -47,10 +47,10 @@ export default function Footer() {
 
           <h3>Social</h3>
           <div className="social-icons">
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            <a href="#"><FaInstagram color="#E94084" /></a>
+            <a href="#"><FaTwitter color="#1AA2F8" /></a>
+            <a href="#"><FaFacebook color="#067EEC" /></a>
+            <a href="#"><FaLinkedin color="#0B66C3" /></a>
           </div>
         </div>
       </div>

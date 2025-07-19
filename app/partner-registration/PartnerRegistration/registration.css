@@ -1,0 +1,180 @@
+.partner-form {
+  padding: 40px 20px;
+  background-color: #f8fafa;
+  margin-top: 85px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.form-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+/* Decorative Images */
+.decor-image {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-right {
+  width: 334px;
+    top: -15px;
+    right: 5px;
+}
+
+.additional-left {
+  width: 334px;
+    top: 46rem;
+    left: -1px;
+}
+
+.form-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.form-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.form-heading {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-grid-single {
+  grid-template-columns: 1fr;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.select-dropdown,
+.text-input {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.checkbox-group {
+  padding: 20px 10px;
+}
+
+.checkbox-group p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #3b5cd6;
+  border: none;
+  border-radius: 6px;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-btn:hover {
+  background-color: #2949bd;
+}
+
+.disclaimer-text {
+  font-size: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1300px) {
+  .form-sections {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-header h1 {
+    font-size: 26px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+  }
+
+  .form-heading {
+    font-size: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .decor-image {
+    display: none;
+  }
+}

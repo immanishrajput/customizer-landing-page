@@ -29,7 +29,7 @@ const Navbar = () => {
                             }}
                         >
                             <span className="nav-inline">
-                                Features <IoIosArrowDown className={`arrow-icon ${isDropdownOpen ? "rotate" : ""}`} />
+                                Showcase <IoIosArrowDown className={`arrow-icon ${isDropdownOpen ? "rotate" : ""}`} />
                             </span>
 
                             {/* Dropdown Menu */}
@@ -51,9 +51,9 @@ const Navbar = () => {
                             </div>
                         </li>
 
-                        <li className="nav-item">Integration</li>
-                        <li className="nav-item">Industry</li>
-                        <li className="nav-item">Customers</li>
+                        <li className="nav-item">About Us</li>
+                        <li className="nav-item">Case Studies</li>
+                        <li className="nav-item">Blog</li>
                         <li className="nav-item">Contact</li>
 
                         {/* Mobile login/demo buttons */}
