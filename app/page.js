@@ -1,3 +1,4 @@
+"use client"
 import Footer from "./COMMON/Footer";
 import Navbar from "./COMMON/Navbar";
 import FaqSection from "./components/FAQ";
@@ -13,7 +14,6 @@ export default function HomePage() {
     <main>
       <Navbar/>
       <HeroSection />
-      {/* <LogoBar/> */}
       <IntegrationSection/>
       <ProductSec/>
       <IndustriesSec/>

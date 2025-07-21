@@ -1,5 +1,5 @@
 .journey-section {
-  padding: 60px 20px;
+  padding: 60px 60px;
   background-color: #ffffff;
 }
 
@@ -21,11 +21,11 @@
   color: #1e1e1e;
   font-weight: 700;
   line-height: 1.4;
-  width: 90%;
+  width: 65%;
 }
 
 .journey-steps {
-  flex: 2 1 600px;
+  flex: 2;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -46,12 +46,12 @@
 
 .journey-steps p {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.6;
   color: #2b353b;
   margin: 0;
 }
-
-/* Responsive */
+ 
 @media screen and (max-width: 1024px) {
   .journey-heading h2 {
     font-size: 28px;
@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .journey-section{
+    padding: 40px 30px;
+  }
   .journey-heading h2 {
     font-size: 22px;
   }

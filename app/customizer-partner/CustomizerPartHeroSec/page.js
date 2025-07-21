@@ -7,7 +7,7 @@ const CustomizerPartHeroSec = () => {
   return (
     <section className="partner-section">
       <article className="partner-content">
-        <h2>Become a Customizer Partner</h2>
+        <h1>Become a Customizer Partner</h1>
         <p>
           Help brands launch and scale customized experiences.
           <br />

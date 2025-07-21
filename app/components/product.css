@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
 .product-tour {
   background-color: #f7f9fb;
   padding: 60px 20px;
-  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -31,8 +28,7 @@
   border-radius: 12px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.04);
 }
-
-/* Feature image grid */
+ 
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -52,8 +48,7 @@
   height: auto;
   object-fit: cover;
 }
-
-/* Tablet (≤1024px) */
+ 
 @media (max-width: 1024px) {
   .section-heading {
     font-size: 36px;
@@ -64,8 +59,7 @@
     gap: 20px;
   }
 }
-
-/* Mobile (≤768px) */
+ 
 @media (max-width: 768px) {
   .section-heading {
     font-size: 28px;

@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 .hero-section {
-  font-family: "Poppins", sans-serif;
   padding: 100px 20px 60px;
   text-align: center;
-  backdrop-filter: blur(200px);
-  background-image: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1752494190/Blur_pyt8ba.png');
+  background-image: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1753083851/Blur_1_nmscvq.png');
   margin-top: 60px;
 }
 
@@ -71,7 +67,6 @@
   border: 2px solid #2d60f6;
 }
 
-/* Trusted logos */
 .trusted {
   padding-top: 40px;
 }
@@ -103,7 +98,6 @@
   opacity: 1;
 }
 
-/* Tablet (≤1024px) */
 @media (max-width: 1024px) {
   .hero-section {
     padding: 80px 20px 50px;
@@ -121,8 +115,7 @@
     width: 120px;
   }
 }
-
-/* Mobile (≤768px) */
+ 
 @media (max-width: 768px) {
   .hero-heading h1 {
     font-size: 32px;

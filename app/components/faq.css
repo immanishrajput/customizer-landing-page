@@ -1,11 +1,9 @@
 .faq-section {
-    padding: 100px 20px;
+    padding: 60px 60px;
     background-color: #f9fafa;
-    font-family: "Poppins", sans-serif;
 }
 
 .faq-container {
-    /* flex-wrap: wrap; */
     align-items: flex-start;
     gap: 65px;
     max-width: 1300px;
@@ -55,10 +53,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-/* .faq-question.active {
-    color: #2d60f6;
-} */
 
 .faq-arrow {
   font-size: 20px;

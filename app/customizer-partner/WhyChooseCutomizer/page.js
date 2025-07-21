@@ -50,8 +50,7 @@ const WhyChooseCustomizer = () => {
       </article>
     ))}
   </div>
-
-  {/* Moved footer below the grid */}
+ 
   <footer className="trusted">
     <p className="trusted-heading">
       Trusted by product teams from the top industry leaders

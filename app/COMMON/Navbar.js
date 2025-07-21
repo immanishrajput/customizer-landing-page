@@ -1,39 +1,44 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 import "./navbar.css";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-    // Check if screen is mobile
     const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
     return (
         <header className="navbar">
             <nav className="navbar-container">
-                {/* Left: Logo + Nav */}
                 <div className="navbar-left">
-                    <div className="logo">CUSTOMIZER</div>
+                    <div className="logo"><Link href="/">CUSTOMIZER</Link></div>
 
                     <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
                         <li
                             className={`nav-item dropdown ${isDropdownOpen ? "active" : ""}`}
+                            onMouseEnter={() => {
+                                if (window.innerWidth > 768) setDropdownOpen(true);
+                            }}
+                            onMouseLeave={() => {
+                                if (window.innerWidth > 768) setDropdownOpen(false);
+                            }}
                             onClick={() => {
-                                if (window.innerWidth <= 768) {
-                                    setDropdownOpen(!isDropdownOpen);
-                                }
+                                if (window.innerWidth <= 768) setDropdownOpen(!isDropdownOpen);
                             }}
                         >
                             <span className="nav-inline">
-                                Showcase <IoIosArrowDown className={`arrow-icon ${isDropdownOpen ? "rotate" : ""}`} />
+                                Showcase <IoIosArrowDown color="#566B76" className={`arrow-icon ${isDropdownOpen ? "rotate" : ""}`} />
                             </span>
 
                             {/* Dropdown Menu */}
-                            <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+                            {/* <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
                                 <div className="dropdown-card blue-card">
                                     <span>Customizer shirts</span>
                                     <img src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1752493138/football-shirt_1_dklwy3.png" alt="Shirt" className="dropdown-img" />
@@ -48,15 +53,45 @@ const Navbar = () => {
                                     <span>Product catalog</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </div>
+                            </div> */}
+                            <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+                                <Link href="/toys-kinds" className="dropdown-row">
+                                    <span>Toys & Kinds</span>
+                                    <IoIosArrowForward className="dropdown-arrow" />
+                                </Link>
+                                <Link href="/bakery" className="dropdown-row">
+                                    <span>Bakery</span>
+                                    <IoIosArrowForward className="dropdown-arrow" />
+                                </Link>
+                                <Link href="/fashion-apparel" className="dropdown-row active">
+                                    <span>Fashion & Apparel</span>
+                                    <IoIosArrowForward className="dropdown-arrow" />
+                                </Link>
+                                <Link href="/jewelry-accessories" className="dropdown-row">
+                                    <span>Jewelry & Accessories</span>
+                                    <IoIosArrowForward className="dropdown-arrow" />
+                                </Link>
+                                <Link href="/gifting-occasion" className="dropdown-row">
+                                    <span>Gifting & Occasion-Based</span>
+                                    <IoIosArrowForward className="dropdown-arrow" />
+                                </Link>
                             </div>
+
                         </li>
 
-                        <li className="nav-item">About Us</li>
-                        <li className="nav-item">Case Studies</li>
-                        <li className="nav-item">Blog</li>
-                        <li className="nav-item">Contact</li>
+                        <li className="nav-item">
+                            <Link href="/about-us">About Us</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/case-studies">Case Studies</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/customizer-partner">Blog</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/partner-registration">Contact</Link>
+                        </li>
 
-                        {/* Mobile login/demo buttons */}
                         <li className="nav-actions-mobile">
                             <button className="login-btn">Login</button>
                             <button className="demo-btn">Get a demo</button>
@@ -64,15 +99,36 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                {/* Desktop login/demo */}
                 <div className="nav-actions desktop-only">
                     <button className="login-btn">Login</button>
                     <button className="demo-btn">Get a demo</button>
                 </div>
 
-                {/* Hamburger */}
-                <div className="hamburger-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+                {/* <div className="hamburger-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
                     {isMobileMenuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+                </div>
+
+                <button className="login-icon-btn" onClick={() => router.push("/login")}>
+                    <FiUser size={20} />
+                </button> */}
+                <div className="nav-mobile-icons">
+                    <div className="hamburger-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+                        {isMobileMenuOpen ? <RxCross2 size={30} />: <GiHamburgerMenu size={30} />}
+                    </div>
+                    <button
+                        className="login-icon-btn"
+                        onClick={() => {
+                            window.location.href = "/"; 
+                        }}
+                    >
+                        <img
+                            src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753099413/Buttons_yomrhk.png" 
+                            alt="Login"
+                            className="login-icon-img"
+                        />
+                    </button>
+
+
                 </div>
             </nav>
         </header>

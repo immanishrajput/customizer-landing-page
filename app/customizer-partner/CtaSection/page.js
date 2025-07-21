@@ -4,11 +4,14 @@ import "./ctasection.css";
 
 const CtaSection = () => {
   return (
-    <section className="cta-section" aria-labelledby="cta-heading">
-      <div className="cta-container">
-        <h2 id="cta-heading">Take the Next Steps to Integrate With Customizer</h2>
-        <a href="/contact" className="cta-button">
-          Contact Us
+    <section className="cta-section">
+      <div className="cta-box">
+        <h2 className="cta-title">Get started for free</h2>
+        <p className="cta-subtext">
+          Play around with Customizer and set up your docs for free. Add your team and pay when you’re ready.
+        </p>
+        <a href="/contact" className="cta-btn">
+          Request a Demo
         </a>
       </div>
     </section>

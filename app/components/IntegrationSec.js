@@ -15,13 +15,11 @@ const IntegrationSection = () => {
   return (
     <section className="integration-section">
       <div className="integration-container">
-        {/* Left content */}
         <div className="integration-content">
           <span className="tag">Integration</span>
           <h2>Seamless integration with any ecommerce platform</h2>
         </div>
-
-        {/* Right logos */}
+        
         <div className="integration-logos">
           {logos.map((logo, index) => (
             <figure key={index} className="logo-box">

@@ -1,6 +1,6 @@
 .testimonial-section {
   background-color: #f8fafa;
-  padding: 80px 20px;
+  padding: 80px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,7 @@
 
 .testimonial-box p {
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .testimonial-box cite {
@@ -28,9 +29,9 @@
   color: #444;
   font-size: 1rem;
   display: block;
+  text-align: left;
 }
-
-/* Responsive */
+ 
 @media screen and (max-width: 1024px) {
   .testimonial-box {
     font-size: 1.1rem;
@@ -38,8 +39,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .testimonial-section {
-    padding: 60px 16px;
+  .testimonial-section { 
+    padding: 0 50px 60px 30px;
+
   }
 
   .testimonial-box {
@@ -58,9 +60,14 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .testimonial-section{
+    padding: 0 25px 60px;
+  }
   .testimonial-box {
     font-size: 0.95rem;
     padding: 20px;
+    box-shadow: 5px 5px #3559c7, 10px 10px #f6cd5a;
   }
 
   .testimonial-box cite {

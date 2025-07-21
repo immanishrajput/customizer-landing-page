@@ -2,7 +2,6 @@
   padding: 100px 20px;
   background-color: #ffffff;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .testimonial-container {
@@ -54,7 +53,6 @@
   color: #777;
   margin: 0;
   text-align: left;
-
 }
 
 .slick-dots li button:before {
@@ -66,6 +64,22 @@
   margin: 0 !important;
 }
 
+/* Tablet & below */
+@media (max-width: 1024px) {
+  .testimonial-section {
+    padding: 80px 20px;
+  }
+
+  .testimonial-title {
+    font-size: 34px;
+  }
+
+  .testimonial-text {
+    font-size: 17px;
+  }
+}
+
+/* Mobile (768px and below) */
 @media (max-width: 768px) {
   .testimonial-section {
     padding: 60px 15px;
@@ -103,3 +117,21 @@
   }
 }
 
+/* Very small screens (like older phones) */
+@media (max-width: 480px) {
+  .testimonial-title {
+    font-size: 22px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
+  .author-name {
+    font-size: 13px;
+  }
+
+  .author-role {
+    font-size: 12px;
+  }
+}
