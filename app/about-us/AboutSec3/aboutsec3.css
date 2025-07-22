@@ -1,5 +1,5 @@
 .aboutsec3-section {
-    padding: 60px 20px;
+    padding: 60px 60px;
     background-color: #f9fafb;
 }
 
@@ -22,7 +22,7 @@
         color: #111827;
     margin-bottom: 16px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 44px;
 }
 
@@ -39,7 +39,6 @@
     background-color: #2563eb;
     color: white;
     border: 1px solid #2563eb;
-
     border-radius: 6px;
     text-decoration: none;
     font-size: 14px;
@@ -53,7 +52,6 @@
 }
 
 .aboutsec3-image {
-    /* flex: 1; */
     text-align: center;
 }
 

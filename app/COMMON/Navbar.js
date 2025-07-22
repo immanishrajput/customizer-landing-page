@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
@@ -55,7 +54,7 @@ const Navbar = () => {
                                 </div>
                             </div> */}
                             <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
-                                <Link href="/toys-kinds" className="dropdown-row">
+                                <Link href="/toys-kinds" className="dropdown-row" id="toys-kinds">
                                     <span>Toys & Kinds</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </Link>
@@ -71,7 +70,7 @@ const Navbar = () => {
                                     <span>Jewelry & Accessories</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </Link>
-                                <Link href="/gifting-occasion" className="dropdown-row">
+                                <Link href="/gifting-occasion" className="dropdown-row" id="gifting-occasion">
                                     <span>Gifting & Occasion-Based</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </Link>
@@ -83,10 +82,10 @@ const Navbar = () => {
                             <Link href="/about-us">About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/case-studies">Case Studies</Link>
+                            <Link href="#">Case Studies</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/customizer-partner">Blog</Link>
+                            <Link href="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/partner-registration">Contact</Link>
@@ -113,16 +112,16 @@ const Navbar = () => {
                 </button> */}
                 <div className="nav-mobile-icons">
                     <div className="hamburger-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
-                        {isMobileMenuOpen ? <RxCross2 size={30} />: <GiHamburgerMenu size={30} />}
+                        {isMobileMenuOpen ? <RxCross2 size={30} /> : <GiHamburgerMenu size={30} />}
                     </div>
                     <button
                         className="login-icon-btn"
                         onClick={() => {
-                            window.location.href = "/"; 
+                            window.location.href = "/";
                         }}
                     >
                         <img
-                            src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753099413/Buttons_yomrhk.png" 
+                            src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753099413/Buttons_yomrhk.png"
                             alt="Login"
                             className="login-icon-img"
                         />

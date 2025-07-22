@@ -1,5 +1,5 @@
 .aboutussec-section {
-    padding: 80px 20px;
+    padding: 80px 60px;
     background-color: #f9fafb;
     margin-top: 80px;
 }
@@ -39,22 +39,21 @@
     padding: 12px 24px;
     background-color: #2563eb;
     color: white;
-    border: 1px solid #2563eb;
-
+    border: 2px solid #2563eb;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 .aboutussec-btn:hover {
     background-color: #fff;
     color: #2563eb;
-    border: 1px solid #2563eb;
+    border: 2px solid #2563eb;
 }
 
-.aboutussec-image {
-    /* flex: 1; */
+.aboutussec-image { 
     text-align: center;
 }
 
@@ -65,7 +64,7 @@
 
 @media (max-width: 768px) {
     .aboutussec-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
@@ -76,14 +75,37 @@
     .aboutussec-content h1 {
         font-size: 35px;
         line-height: 40px;
+        text-align: left;
     }
 
     .aboutussec-content p {
         font-size: 15px;
+        text-align: left;
     }
 
     .aboutussec-btn {
         font-size: 13px;
         padding: 10px 20px;
+        display: block;
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutussec-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        display: block; 
+    }
+
+    .aboutussec-section{
+        padding: 40px 35px;
+    }
+}
+@media (max-width: 350px) {
+    .aboutussec-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        display: block; 
     }
 }

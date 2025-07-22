@@ -159,7 +159,7 @@ textarea {
 @media screen and (max-width: 1300px) {
   .form-sections {
     width: 100%;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 
   .submit-btn {
@@ -174,6 +174,7 @@ textarea {
 
   .form-header p {
     font-size: 14px;
+    width: 100%;
   }
 
   .form-heading {
@@ -186,5 +187,11 @@ textarea {
 
   .decor-image {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partner-form{
+    padding:40px 20px;
   }
 }

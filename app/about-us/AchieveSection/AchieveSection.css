@@ -1,0 +1,211 @@
+.achieve-section {
+    background-color: #202228;
+    padding: 60px 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.achieve-header h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.achieve-header p {
+    font-size: 19px;
+    color: #FCFDFD;
+    width: 750px;
+    margin: 0 auto 40px;
+}
+
+.achieve-grid-wrapper {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.achieve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.achieve-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    padding: 20px 0;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.achieve-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 0 20px;
+}
+
+.achieve-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.achieve-card p {
+    font-size: 0.95rem;
+    color: #444;
+    padding: 0 20px;
+
+}
+
+.card-header {
+    margin-bottom: 16px;
+}
+
+.card-divider {
+    height: 1px;
+    background-color: #e1e2e6;
+    margin-bottom: 16px;
+}
+
+
+.cta-box {
+    background: linear-gradient(90deg, #F8F7FE 0%, #E7DCF9 100%);
+    border-radius: 16px;
+    padding: 40px 20px;
+    color: #14161b;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid #793AAF;
+}
+
+.cta-box h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.cta-box p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+    color: #333;
+    font-weight: 500;
+}
+
+.cta-box button {
+    background-color: #3559C7;
+    color: #fff;
+    padding: 12px 24px;
+    border: 2px solid #3559C7;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-box button:hover {
+    background-color: #fff;
+    color: #3559C7;
+    border: 2px solid #3559C7;
+}
+
+@media (max-width: 1024px) {
+  .achieve-section {
+    padding: 50px 40px;
+  }
+
+  .achieve-header p {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .cta-box {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .achieve-section {
+    padding: 40px 20px;
+  }
+
+  .achieve-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .achieve-header p {
+    font-size: 16px;
+  }
+
+  .achieve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achieve-card {
+    padding: 20px 0;
+  }
+
+  .achieve-card h4,
+  .achieve-card h3,
+  .achieve-card p {
+    padding: 0 16px;
+  }
+
+  .cta-box {
+    padding: 28px 16px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-box p {
+    font-size: 0.95rem;
+  }
+
+  .cta-box button {
+    width: 180px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .achieve-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .achieve-header p {
+    font-size: 15px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .cta-box p {
+    font-size: 0.9rem;
+  }
+
+  .cta-box {
+    padding: 24px 12px;
+  }
+
+  .cta-box button {
+    font-size: 0.9rem; 
+  }
+
+  .achieve-card h4 {
+    font-size: 16px;
+  }
+
+  .achieve-card h3 {
+    font-size: 1rem;
+  }
+
+  .achieve-card p {
+    font-size: 0.9rem;
+  }
+}

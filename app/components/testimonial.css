@@ -64,7 +64,6 @@
   margin: 0 !important;
 }
 
-/* Tablet & below */
 @media (max-width: 1024px) {
   .testimonial-section {
     padding: 80px 20px;
@@ -79,7 +78,6 @@
   }
 }
 
-/* Mobile (768px and below) */
 @media (max-width: 768px) {
   .testimonial-section {
     padding: 60px 15px;
@@ -117,7 +115,6 @@
   }
 }
 
-/* Very small screens (like older phones) */
 @media (max-width: 480px) {
   .testimonial-title {
     font-size: 22px;

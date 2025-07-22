@@ -51,7 +51,7 @@ const WhyChooseCustomizer = () => {
     ))}
   </div>
  
-  <footer className="trusted">
+  <footer className="trustedd">
     <p className="trusted-heading">
       Trusted by product teams from the top industry leaders
     </p>

@@ -21,11 +21,11 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Company</h3>
           <ul>
-            <li><a href="#">About Us</a></li>
+            <li><a href="/about-us">About Us</a></li>
             <li><a href="#">Showcase</a></li>
             <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Become a Partner</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/customizer-partner">Become a Partner</a></li>
           </ul>
         </div>
 

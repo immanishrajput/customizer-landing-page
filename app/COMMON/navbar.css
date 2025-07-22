@@ -79,6 +79,7 @@
     border: none;
     color: #1f1f1f;
     font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -106,7 +107,7 @@
     background-color: #fff;
     border-radius: 14px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    padding: 10px 0;
+    /* padding: 10px 0; */
     min-width: 300px;
     z-index: 999;
     display: none;
@@ -135,6 +136,18 @@
     background-color: #D7DEF4;
 }
 
+#toys-kinds:hover {
+    background-color: #D7DEF4;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+#gifting-occasion:hover {
+    background-color: #D7DEF4;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
 .dropdown-row:not(:last-child) {
     border-bottom: 1px solid #f0f0f0;
 }
@@ -154,31 +167,33 @@
 }
 
 .login-icon-btn {
-  background: none;
-  border: none;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .login-icon-img {
-  width: 35px;
-  height: 35px;
-  object-fit: cover;
-  border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .nav-mobile-icons {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-@media (min-width: 769px) {
-  .nav-mobile-icons {
-    display: none;
-  }
+@media (min-width: 1025px) {
+
+    .login-icon-btn,
+    .nav-mobile-icons {
+        display: none;
+    }
 }
 
 
@@ -229,7 +244,7 @@
     }
 
     .demo-btn {
-        width: 35%;
+        width: 120px;
         font-size: 12px;
     }
 

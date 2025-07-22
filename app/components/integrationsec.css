@@ -96,3 +96,34 @@
     max-width: 100px;
   }
 }
+
+@media (max-width: 480px) {
+  .integration-container {
+    padding: 24px;
+  }
+
+  .integration-content .tag {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .integration-content{
+    text-align: center;
+    min-width: 40%;
+  }
+
+  .integration-content h2 {
+    font-size: 20px;
+    /* width: 80%; */
+  }
+
+  .integration-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .logo-box img {
+    max-width: 80px;
+  }
+}
+
