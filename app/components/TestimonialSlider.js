@@ -36,30 +36,26 @@ const testimonials = [
 const TestimonialSlider = () => {
   const sliderRef = useRef(null);
   const sectionRef = useRef(null);
-  const [shouldPlay, setShouldPlay] = useState(false);
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
   useEffect(() => {
+    const node = sectionRef.current;        // ← capture once
+    if (!node) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasPlayedOnce) {
-          sliderRef.current?.slickGoTo(0); // Go to first slide
-          setShouldPlay(true); // Start autoplay
-          setHasPlayedOnce(true); // Prevent future resets
+          sliderRef.current?.slickGoTo(0);
+          setHasPlayedOnce(true);           // autoplay already true in settings
         }
       },
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    observer.observe(node);
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    // cleanup uses the *same* captured node
+    return () => observer.unobserve(node);
   }, [hasPlayedOnce]);
 
   const settings = {
@@ -80,14 +76,19 @@ const TestimonialSlider = () => {
         <header>
           <h2 className="testimonial-title">Customers Say It Best:</h2>
         </header>
+
         <Slider ref={sliderRef} {...settings}>
           {testimonials.map((t, i) => (
             <article key={i} className="testimonial-slide">
               <p className="testimonial-text">{t.text}</p>
+
               <div className="testimonial-author">
-                <Image src={t.image} alt={t.name} className="author-image"
+                <Image
+                  src={t.image}
+                  alt={t.name}
                   width={50}
                   height={50}
+                  className="author-image"
                   priority
                 />
                 <div>

@@ -40,7 +40,15 @@ const ProductSec = () => {
         <div className="feature-grid">
           {features.map((item, index) => (
             <figure className="feature-card" key={index}>
-              <img src={item.img} alt={item.alt} />
+              <Image
+  src={item.img}
+  alt={item.alt}
+  width={100}
+  height={100}
+  className="feature-icon"
+  priority
+  unoptimized
+/>
             </figure>
           ))}
         </div>
