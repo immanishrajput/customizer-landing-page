@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./registration.css";
+import Image from "next/image";
 
 const PartnerRegistration = () => {
     return (
@@ -10,19 +11,25 @@ const PartnerRegistration = () => {
                 <p>The information you provide below must be that of an authorized signer at your company.</p>
             </header>
 
-            <div className="form-wrapper"> 
-                <img
+            <div className="form-wrapper">
+                <Image
                     src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1752929352/Ellipse_11_ruliqi.png"
                     alt="decor"
+                    width={500}
+                    height={500}
+                    priority
                     className="decor-image contact-right"
                 />
-                <img
+                <Image
                     src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1752929352/Ellipse_12_cwts5e.png"
                     alt="decor"
+                    width={500}
+                    height={500}
+                    priority
                     className="decor-image additional-left"
                 />
 
-                <form className="form-sections"> 
+                <form className="form-sections">
                     <fieldset className="form-box">
                         <h2 className="form-heading">Contact Information</h2>
                         <div className="form-grid">
@@ -34,7 +41,7 @@ const PartnerRegistration = () => {
                             <input type="tel" placeholder="Mobile Phone*" required />
                         </div>
                     </fieldset>
- 
+
                     <fieldset className="form-box">
                         <h2 className="form-heading">Company Information</h2>
                         <div className="form-grid form-grid-single">
@@ -85,7 +92,7 @@ const PartnerRegistration = () => {
                         <input type="text" placeholder="Where are your clients based?*" required className="text-input" />
                         <input type="text" placeholder="Where are your clients based?*" required className="text-input" />
 
-                        <textarea  placeholder="Tell us a bit more about what you're looking for from a partnership with Customizer" className="text-input"></textarea>
+                        <textarea placeholder="Tell us a bit more about what you're looking for from a partnership with Customizer" className="text-input"></textarea>
                     </fieldset>
 
                     <button type="submit" className="submit-btn">Apply</button>

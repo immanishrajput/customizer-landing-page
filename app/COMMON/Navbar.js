@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import "./navbar.css";
+import Image from "next/image";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -120,9 +121,11 @@ const Navbar = () => {
                             window.location.href = "/";
                         }}
                     >
-                        <img
+                        <Image
                             src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753099413/Buttons_yomrhk.png"
                             alt="Login"
+                            width={30}
+                            height={30}
                             className="login-icon-img"
                         />
                     </button>

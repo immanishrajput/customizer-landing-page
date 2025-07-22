@@ -1,5 +1,7 @@
 "use client";
+
 import React from "react";
+import Image from "next/image";
 import "./aboutsec3.css";
 
 const AboutSec3 = () => {
@@ -14,7 +16,13 @@ const AboutSec3 = () => {
                 </article>
 
                 <figure className="aboutsec3-image">
-                    <img src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753102164/14449322_5464026_1_n4quk0.png" alt="T-shirt product configurator demo" />
+                    <Image
+                        src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753102164/14449322_5464026_1_n4quk0.png"
+                        alt="T-shirt product configurator demo"
+                        width={500}
+                        height={500}
+                        priority
+                    />
                 </figure>
             </div>
         </section>

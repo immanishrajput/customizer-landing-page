@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./product.css";
+import Image from "next/image";
 
 const features = [
   {
@@ -28,9 +29,11 @@ const ProductSec = () => {
         <h2 className="section-heading">More Than Just Product Tours</h2>
 
         <div className="main-preview">
-          <img
+          <Image
             src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1752482654/Group_12_o6lgrj.png"
             alt="Main product tour preview"
+            width={600}
+            height={400}
           />
         </div>
 

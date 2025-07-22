@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./integrationsec.css";
+import Image from "next/image";
 
 const logos = [
   { src: "https://res.cloudinary.com/dqjbzgksw/image/upload/v1752480094/shopify-svgrepo-com_spabnz.png", alt: "Shopify" },
@@ -23,7 +24,12 @@ const IntegrationSection = () => {
         <div className="integration-logos">
           {logos.map((logo, index) => (
             <figure key={index} className="logo-box">
-              <img src={logo.src} alt={logo.alt} />
+              <Image src={logo.src} alt={logo.alt}
+                width={100}
+                height={50}
+                className="integration-logo"
+                priority
+              />
             </figure>
           ))}
         </div>

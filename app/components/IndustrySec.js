@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./industrysec.css";
+import Image from "next/image";
 
 const industries = [
   {
@@ -43,7 +44,11 @@ const IndustriesSec = () => {
         <div className="industries-grid">
           {industries.map((item, index) => (
             <article className="industry-card" key={index}>
-              <img src={item.icon} alt={item.title} className="industry-icon" />
+              <Image src={item.icon} alt={item.title}
+                width={50}
+                height={50}
+                className="industry-icon"
+                priority />
               <h3 className="industry-title">{item.title}</h3>
               <p className="industry-desc">{item.desc}</p>
             </article>

@@ -1,13 +1,20 @@
 "use client";
 import React from "react";
 import "./aboutsec4.css";
+import Image from "next/image";
 
 const AboutSec4 = () => {
     return (
         <section className="aboutsec4-section" aria-labelledby="aboutsec4-heading">
             <div className="aboutsec4-container">
-                 <figure className="aboutsec4-image">
-                    <img src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753102164/14449322_5464026_1_n4quk0.png" alt="T-shirt product configurator demo" />
+                <figure className="aboutsec4-image">
+                    <Image
+                        src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753102164/14449322_5464026_1_n4quk0.png"
+                        alt="T-shirt product configurator demo"
+                        width={500}
+                        height={500}
+                        priority
+                    />
                 </figure>
                 <article className="aboutsec4-content">
                     <h3 id="aboutsec4-heading">Use The Ecommerce Personalization Designer Anywhere</h3>

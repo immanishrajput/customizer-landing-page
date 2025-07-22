@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./aboutbanner.css";
+import Image from "next/image";
 
 const AboutUsBanner = () => {
   return (
@@ -16,7 +17,10 @@ const AboutUsBanner = () => {
         </article>
 
         <figure className="aboutussec-image">
-          <img src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753100750/Group_14_msuqx4.png" alt="T-shirt product configurator demo" />
+          <Image src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1753100750/Group_14_msuqx4.png" alt="T-shirt product configurator demo"
+            width={400}
+            height={400}
+            priority />
         </figure>
       </div>
     </section>

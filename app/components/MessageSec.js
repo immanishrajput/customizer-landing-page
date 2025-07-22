@@ -2,6 +2,7 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import "./message.css";
+import Image from "next/image";
 
 const MessageSec = () => {
   return (
@@ -21,9 +22,11 @@ const MessageSec = () => {
           </button>
         </article>
         <figure className="message-image">
-          <img
+          <Image
             src="https://res.cloudinary.com/dqjbzgksw/image/upload/v1752490985/Group_fh1sfm.png"
             alt="Chat notification icon"
+            width={300}
+            height={300}
           />
         </figure>
       </div>

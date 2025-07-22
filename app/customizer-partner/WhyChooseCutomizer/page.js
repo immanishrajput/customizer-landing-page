@@ -58,7 +58,12 @@ const WhyChooseCustomizer = () => {
     <div className="brands-wrapper">
       {brandLogos.map((brand, index) => (
         <figure key={index} className="brand-logo">
-          <img src={brand.src} alt={brand.alt} />
+          <Image src={brand.src} alt={brand.alt}
+            width={100}
+            height={50}
+            className="brand-logo-img"
+            priority
+          />
         </figure>
       ))}
     </div>
