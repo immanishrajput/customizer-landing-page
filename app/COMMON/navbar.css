@@ -220,6 +220,10 @@
     margin-top: 20px;
 }
 
+.ham-actions-mobile {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .nav-links {
         display: none;
@@ -258,6 +262,12 @@
 
     .nav-actions-mobile {
         margin: 0;
+    }
+
+    .ham-actions-mobile {
+        margin: 0;
+        padding: 10px;
+        display: block;
     }
 
     .hamburger-icon {

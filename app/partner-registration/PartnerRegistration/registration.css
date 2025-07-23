@@ -35,22 +35,22 @@
 }
 
 .contact-right {
-  width: 334px;
-  top: -15px;
-  right: 5px;
+  width: 355px;
+  top: -25px;
+  right: 48px;
 }
 
 .additional-left {
   width: 334px;
-  top: 46rem;
-  left: -1px;
+  top: 44rem;
+  left: 35px;
 }
 
 .form-sections {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 1300px;
+  width: 1100px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -191,7 +191,7 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .partner-form{
-    padding:40px 20px;
+  .partner-form {
+    padding: 40px 20px;
   }
 }

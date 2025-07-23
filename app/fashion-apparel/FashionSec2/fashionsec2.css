@@ -1,0 +1,150 @@
+.sports-section {
+  padding: 60px 60px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sports-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.sports-header p {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background-color: #F7F8FD;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-image {
+     object-fit: contain;
+    width: 180px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+}
+
+.product-info {
+  padding: 16px;
+  background-color: #f9fafb;
+  text-align: left;
+}
+
+.product-info h3 {
+     color: #0f172a;
+    margin-bottom: 12px;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.customize-button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  color: #3559C7;
+  border: 2px solid #3559C7;
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin-top: 4px;
+  background-color: #EBEFFA;
+}
+
+.customize-button:hover {
+  background-color: #3559C7;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sports-section {
+    padding: 40px 16px;
+  }
+
+  .sports-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .sports-header p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  .customize-button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sports-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .sports-header p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    padding: 0 8px;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  .customize-button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+
+  .product-image {
+    width: 160px;
+    padding: 16px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sports-section {
+    padding: 40px 20px;
+  }
+}
+

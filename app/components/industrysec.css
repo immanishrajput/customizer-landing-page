@@ -100,18 +100,15 @@
 
     .industry-title {
         font-size: 20px;
-        text-align: center;
     }
 
     .industry-desc {
         font-size: 15px;
-        text-align: center;
 
     }
 
     .industry-icon {
         height: 100px;
-        margin: auto;
         padding-bottom: 10px;
     }
 }

@@ -7,12 +7,15 @@ import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import "./navbar.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
     const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
+    const router = useRouter();
 
     return (
         <header className="navbar">
@@ -75,6 +78,13 @@ const Navbar = () => {
                                     <span>Gifting & Occasion-Based</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </Link>
+
+                                <li className="ham-actions-mobile">
+                                    <button onClick={() => router.push("/partner-registration")} className="demo-btn">
+                                        Get a demo
+                                    </button>
+                                </li>
+
                             </div>
 
                         </li>
@@ -89,19 +99,21 @@ const Navbar = () => {
                             <Link href="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/partner-registration">Contact</Link>
+                            <Link href="/contact">Contact</Link>
                         </li>
 
                         <li className="nav-actions-mobile">
                             <button className="login-btn">Login</button>
-                            <button className="demo-btn">Get a demo</button>
+                            {/* <button className="demo-btn">Get a demo</button> */}
                         </li>
                     </ul>
                 </div>
 
                 <div className="nav-actions desktop-only">
                     <button className="login-btn">Login</button>
-                    <button className="demo-btn">Get a demo</button>
+                    <button onClick={() => router.push("/partner-registration")} className="demo-btn">
+                        Get a demo
+                    </button>
                 </div>
 
                 {/* <div className="hamburger-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>

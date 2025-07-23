@@ -81,12 +81,13 @@
         padding: 30px 20px;
         max-width: 100%;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .partner-content h1 {
         font-size: 36px;
         line-height: 44px;
+        text-align: left;
     }
 
     .partner-button {
@@ -98,6 +99,7 @@
         width: 100%;
         max-width: 100%;
         height: auto;
+        display: none;
     }
 
     .partner-image {

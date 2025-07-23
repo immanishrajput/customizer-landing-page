@@ -135,4 +135,8 @@
   .brand-logo img {
     width: 100px;
   }
+
+  .btn-outline , .btn-solid{
+    width: 270px;
+  }
 }
