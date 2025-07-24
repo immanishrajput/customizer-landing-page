@@ -11,7 +11,11 @@ const features = [
     },
     {
         icon: "https://res.cloudinary.com/dqjbzgksw/image/upload/v1752920088/Group_13_g20plp.png",
-        title: "Faster Go-to-Market",
+        title: (
+            <>
+                Faster Go-to-<br />Market
+            </>
+        ),
         desc: "With Customizer, what used to take months now takes hours. Launch tailored experiences or updates instantly with zero developer bottlenecks.",
     },
     {

@@ -1,6 +1,7 @@
 .aboutussec-section {
     padding: 80px 60px;
-    background-color: #f9fafb;
+    background: linear-gradient(180deg, #F5F6FA 0%, #F5F6FA 100%);
+
     margin-top: 80px;
 }
 
@@ -22,9 +23,9 @@
 .aboutussec-content h1 {
     color: #111827;
     margin-bottom: 16px;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 50px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .aboutussec-content p {

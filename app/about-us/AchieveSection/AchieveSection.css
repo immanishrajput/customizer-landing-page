@@ -2,7 +2,7 @@
     background-color: #202228;
     padding: 60px 60px;
     text-align: center;
-    color: #ffffff;
+    color: #FCFDFD;
 }
 
 .achieve-header h2 {
@@ -82,8 +82,8 @@
 }
 
 .cta-box h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 

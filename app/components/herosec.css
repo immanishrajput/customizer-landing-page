@@ -19,9 +19,9 @@
 }
 
 .hero-subtext {
-  font-size: 16px;
+  font-size: 22px;
   color: #333;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 32px;
   line-height: 1.6;
 }
@@ -36,26 +36,26 @@
 
 .btn-outline {
   background-color: white;
-  color: #2d60f6;
+  color: #3559C7;
   padding: 12px 24px;
-  font-size: 14px;
-  border: 2px solid #2d60f6;
+  font-size: 16px;
+  border: 2px solid #3559C7;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-  background-color: #2d60f6;
+  background-color: #3559C7;
   color: #fff;
 }
 
 .btn-solid {
-  background-color: #2d60f6;
+  background-color: #3559C7;
   color: white;
   padding: 12px 24px;
-  font-size: 14px;
-  border: 2px solid #2d60f6;
+  font-size: 16px;
+  border: 2px solid #3559C7;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -63,8 +63,8 @@
 
 .btn-solid:hover {
   background-color: #fff;
-  color: #2d60f6;
-  border: 2px solid #2d60f6;
+  color: #3559C7;
+  border: 2px solid #3559C7;
 }
 
 .trusted {
@@ -83,7 +83,6 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
-  flex-wrap: wrap;
 }
 
 .brand-logo img {
@@ -115,7 +114,7 @@
     width: 120px;
   }
 }
- 
+
 @media (max-width: 768px) {
   .hero-heading h1 {
     font-size: 32px;
@@ -136,7 +135,19 @@
     width: 100px;
   }
 
-  .btn-outline , .btn-solid{
+  .btn-outline,
+  .btn-solid {
     width: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-wrapper .brand-logo:nth-child(1),  /* Shopify */
+  .brands-wrapper .brand-logo:nth-child(5) { /* Believe */
+    display: none !important;
+  }
+
+  .brands-wrapper{
+      gap: 16px;
   }
 }

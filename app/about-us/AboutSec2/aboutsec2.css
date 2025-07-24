@@ -1,5 +1,6 @@
 .why-section {
-  background-color: #f8fafa;
+  /* background-color: ; */
+  background: var(--Background-10, #FCFDFD);
   padding: 60px 60px;
   text-align: center;
 }
@@ -11,7 +12,7 @@
 
 .why-header h2 {
   font-size: 42px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #1e1e1e;
 }
@@ -42,8 +43,8 @@
 }
 
 .why-card h3 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   color: #2B353B;
   margin-bottom: 15px;
   text-align: left;
@@ -110,7 +111,7 @@
   }
 
   .why-card h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .why-card p {

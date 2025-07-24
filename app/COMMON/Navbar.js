@@ -58,11 +58,7 @@ const Navbar = () => {
                                 </div>
                             </div> */}
                             <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
-                                <Link href="/toys-kinds" className="dropdown-row" id="toys-kinds">
-                                    <span>Toys & Kinds</span>
-                                    <IoIosArrowForward className="dropdown-arrow" />
-                                </Link>
-                                <Link href="/bakery" className="dropdown-row">
+                                <Link href="/bakery" className="dropdown-row" id="bakery-row">
                                     <span>Bakery</span>
                                     <IoIosArrowForward className="dropdown-arrow" />
                                 </Link>

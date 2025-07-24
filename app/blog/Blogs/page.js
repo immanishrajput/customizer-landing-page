@@ -9,7 +9,7 @@ const dummyBlogs = [
     image:
       "https://res.cloudinary.com/dqjbzgksw/image/upload/v1753166012/Rectangle_21_bd8o9w.png",
     date: "27 July, 25",
-    author: "Sara Tendulkar",
+    author: "Sara Tandowsky",
   },
   ...Array.from({ length: 9 }, (_, i) => ({
     id: i + 2,
@@ -17,7 +17,7 @@ const dummyBlogs = [
     image:
       "https://res.cloudinary.com/dqjbzgksw/image/upload/v1753166012/Rectangle_21_1_qgqtbo.png",
     date: "27 July, 25",
-    author: "Sara Tendulkar",
+    author: "Sara Tandowsky",
   })),
 ];
 

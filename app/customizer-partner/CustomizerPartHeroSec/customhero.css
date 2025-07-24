@@ -25,9 +25,9 @@
 .partner-content h1 {
     color: #1e1e1e;
     margin-bottom: 16px;
-    font-size: 45px;
+    font-size: 48px;
     line-height: 55px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .partner-content p {
@@ -80,7 +80,7 @@
     .partner-content {
         padding: 30px 20px;
         max-width: 100%;
-        align-items: center;
+        /* align-items: center; */
         text-align: left;
     }
 

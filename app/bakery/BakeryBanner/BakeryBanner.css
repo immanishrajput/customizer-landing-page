@@ -1,0 +1,111 @@
+.bakerybanner-section {
+    padding: 80px 60px;
+    background-color: #f9fafb;
+    margin-top: 80px;
+}
+
+.bakerybanner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.bakerybanner-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.bakerybanner-content h1 {
+        color: #111827;
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.bakerybanner-content p {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.bakerybanner-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.bakerybanner-btn:hover {
+    background-color: #fff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.bakerybanner-image { 
+    text-align: center;
+}
+
+.bakerybanner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .bakerybanner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .bakerybanner-content {
+        max-width: 100%;
+    }
+
+    .bakerybanner-content h1 {
+                text-align: left;
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .bakerybanner-content p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .bakerybanner-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+        display: block;
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bakerybanner-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        display: block; 
+    }
+
+    .bakerybanner-section{
+        padding: 40px 35px;
+    }
+}
+@media (max-width: 350px) {
+    .bakerybanner-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        display: block; 
+    }
+}

@@ -17,7 +17,7 @@ const IntegrationSection = () => {
     <section className="integration-section">
       <div className="integration-container">
         <div className="integration-content">
-          <span className="tag">Integration</span>
+          <button className="tag">Integration</button>
           <h2>Seamless integration with any ecommerce platform</h2>
         </div>
         

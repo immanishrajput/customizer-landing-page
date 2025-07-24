@@ -11,7 +11,7 @@
 
 .why-header h2 {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #1e1e1e;
 }
@@ -49,8 +49,9 @@
 }
 
 .why-card h3 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 500;
   color: #2B353B;
   margin-bottom: 15px;
   text-align: left;
@@ -80,7 +81,6 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
-  flex-wrap: wrap;
 }
 
 .brand-logo {
@@ -137,11 +137,11 @@
   }
 
   .why-card {
-    padding: 16px 16px 24px;
+    padding: 8px 16px;
   }
 
   .why-card h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .why-card p {
@@ -167,7 +167,7 @@
   }
 
   .why-card h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .why-card p {
@@ -178,12 +178,21 @@
     width: 90px;
   }
 
+  .trustedd{
+    padding-top: 40px;
+  }
+
   .trusted-heading {
     font-size: 15px;
     padding: 0 10px;
   }
 
-  .brands-wrapper {
-    gap: 24px;
+  .brands-wrapper .brand-logo:nth-child(1),  /* Shopify */
+  .brands-wrapper .brand-logo:nth-child(5) { /* Believe */
+    display: none !important;
+  }
+
+  .brands-wrapper{
+      gap: 16px;
   }
 }

@@ -15,7 +15,7 @@
 
 .footer-section h3 {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
 
 }
@@ -48,7 +48,7 @@
 }
 
 .footer-desc {
-        color: #4d4f63;
+    color: #4d4f63;
     max-width: 240px;
     font-weight: 500;
     font-size: 14px;
@@ -56,6 +56,7 @@
 
 .footer-section p {
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .social-icons {
@@ -64,10 +65,17 @@
     margin-top: 8px;
 }
 
+
 .social-icons a svg {
     width: 30px;
     height: 25px;
+    transition: transform 0.3s ease;
 }
+
+.social-icons a:hover svg {
+    transform: scale(1.2);
+}
+
 
 .footer-section p svg {
     vertical-align: middle;
@@ -78,15 +86,16 @@
 .footer-bottom {
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
-    padding-top: 15px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 13px; 
+    font-size: 14px;
     margin-inline: auto;
 }
 
-.footer-bottom a , .footer-bottom p {
+.footer-bottom a,
+.footer-bottom p {
     color: #1d1e2c;
     text-decoration: none;
     font-weight: 500;
@@ -132,6 +141,7 @@
         font-size: 12px;
     }
 }
+
 @media (max-width: 600px) {
     .footer {
         padding: 30px 35px;
@@ -143,6 +153,7 @@
         gap: 20px;
     }
 }
+
 @media (max-width: 480px) {
     .footer {
         padding: 30px 35px;
@@ -152,5 +163,10 @@
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+    }
+
+    .footer-desc{
+        max-width: 220px;
+        font-size: 14px;
     }
 }

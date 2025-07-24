@@ -1,9 +1,44 @@
 "use client";
-import React from "react";
-import "./registration.css";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { IoMdArrowDropdown } from "react-icons/io";
+import "./registration.css";
 
+
+const industriesList = [
+    "Industries-1",
+    "Industries-2",
+    "Industries-3",
+    "Industries-4",
+];
 const PartnerRegistration = () => {
+
+    const [selectedIndustries, setSelectedIndustries] = useState([]);
+    const [selectAll, setSelectAll] = useState(false);
+
+    useEffect(() => {
+        if (selectAll) {
+            setSelectedIndustries([...industriesList]);
+        } else {
+            setSelectedIndustries([]);
+        }
+    }, [selectAll]);
+
+    const handleIndividualChange = (industry) => {
+        if (selectedIndustries.includes(industry)) {
+            const updated = selectedIndustries.filter((i) => i !== industry);
+            setSelectedIndustries(updated);
+            setSelectAll(false);
+        } else {
+            const updated = [...selectedIndustries, industry];
+            setSelectedIndustries(updated);
+            if (updated.length === industriesList.length) {
+                setSelectAll(true);
+            }
+        }
+    };
+
     return (
         <main className="partner-form">
             <header className="form-header">
@@ -66,28 +101,57 @@ const PartnerRegistration = () => {
 
                     <fieldset className="form-box">
                         <h2 className="form-heading">Additional Information</h2>
-
-                        <select required>
-                            <option value="">How many customers do you anticipate referring to Customizer within the next 12 months?*</option>
-                            <option>1-5</option>
-                            <option>6-10</option>
-                            <option>10+</option>
-                        </select>
+                        <div className="custom-select">
+                            <select required>
+                                <option value="">
+                                    How many customers do you anticipate referring to Customizer within the next 12 months?*
+                                </option>
+                                <option>1-5</option>
+                                <option>6-10</option>
+                                <option>10+</option>
+                            </select>
+                            <span className="custom-select-icon">
+                                <IoMdArrowDropdown />
+                            </span>
+                        </div>
 
                         <div className="checkbox-group">
                             <p>Which industries do you work with primarily?*</p>
-                            <label><input type="checkbox" defaultChecked /> All Industries</label>
-                            <label><input type="checkbox" /> Industries-1</label>
-                            <label><input type="checkbox" /> Industries-2</label>
-                            <label><input type="checkbox" /> Industries-3</label>
-                            <label><input type="checkbox" /> Industries-4</label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={selectAll}
+                                    onChange={() => setSelectAll(!selectAll)}
+                                />{" "}
+                                All Industries
+                            </label>
+
+                            {industriesList.map((industry) => (
+                                <label key={industry}>
+                                    <input
+                                        type="checkbox"
+                                        checked={selectedIndustries.includes(industry)}
+                                        onChange={() => handleIndividualChange(industry)}
+                                    />{" "}
+                                    {industry}
+                                </label>
+                            ))}
                         </div>
 
-                        <select className="select-dropdown" required>
-                            <option value="">Is anyone at your company a relative, friend, or otherwise connected to any Customizer employees?*</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                        </select>
+                        <div className="custom-select">
+                            <select required>
+                                <option value="">
+                                    Is anyone at your company a relative, friend, or otherwise connected to any Customizer employees?*
+                                </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <span className="custom-select-icon">
+                                <IoMdArrowDropdown />
+                            </span>
+                        </div>
+
 
                         <input type="text" placeholder="Where are your clients based?*" required className="text-input" />
                         <input type="text" placeholder="Where are your clients based?*" required className="text-input" />
@@ -97,7 +161,7 @@ const PartnerRegistration = () => {
 
                     <button type="submit" className="submit-btn">Apply</button>
                     <p className="disclaimer-text">
-                        By requesting a demo you agree to Customizer’s Privacy Policy, and you consent to receive communications.
+                        By requesting a demo you agree to Customizer’s <Link href={"/privacy-policy"} >Privacy Policy</Link>, and you consent to receive communications.
                     </p>
                 </form>
             </div>

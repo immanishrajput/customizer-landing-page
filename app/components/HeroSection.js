@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import "./herosec.css";
 import Image from "next/image";
 
@@ -12,6 +12,7 @@ const brandLogos = [
 ];
 
 const HeroSection = () => {
+
   return (
     <section className="hero-section">
       <div className="hero-wrapper">

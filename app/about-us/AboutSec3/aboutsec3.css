@@ -22,15 +22,15 @@
         color: #111827;
     margin-bottom: 16px;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 44px;
 }
 
 .aboutsec3-content p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.5;
     color: #4b5563;
     margin-bottom: 24px;
-    line-height: 1.6;
 }
 
 .aboutsec3-btn {

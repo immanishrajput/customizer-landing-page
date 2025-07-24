@@ -17,10 +17,10 @@
 }
 
 .journey-heading h2 {
-  font-size: 32px;
+  font-size: 40px;
   color: #1e1e1e;
-  font-weight: 700;
-  line-height: 1.4;
+  font-weight: 500;
+  line-height: 1.2;
   width: 65%;
 }
 
@@ -70,7 +70,7 @@
   }
 
   .journey-heading {
-    text-align: center;
+    /* text-align: center; */
     flex: 0;
   }
 
