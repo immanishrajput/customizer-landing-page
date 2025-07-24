@@ -24,6 +24,7 @@
   color: #3559C7;
   font-weight: 500;
   font-size: 40px;
+  line-height: 0.2;
 }
 
 .message-text p {
@@ -82,7 +83,7 @@
 
   .message-text h2 {
     font-size: 26px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 
   .message-text p {

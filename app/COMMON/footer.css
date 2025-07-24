@@ -1,6 +1,6 @@
 .footer {
     background: #FCFDFD;
-    padding: 40px 70px 40px;
+    padding: 40px 70px 25px;
     font-size: 14px;
     color: #1d1e2c;
 }
@@ -57,6 +57,7 @@
 .footer-section p {
     margin-bottom: 20px;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .social-icons {
@@ -86,7 +87,7 @@
 .footer-bottom {
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

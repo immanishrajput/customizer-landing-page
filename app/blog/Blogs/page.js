@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import "./blogs.css";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ const dummyBlogs = [
       "https://res.cloudinary.com/dqjbzgksw/image/upload/v1753166012/Rectangle_21_bd8o9w.png",
     date: "27 July, 25",
     author: "Sara Tandowsky",
+    link: "/blog-detail",
   },
   ...Array.from({ length: 9 }, (_, i) => ({
     id: i + 2,
@@ -31,9 +33,12 @@ export default function Blogs() {
       </header>
 
       <section className="blog-grid-wrapper">
-        <article className="featured-blog">
-          <BlogCard blog={featured} featured />
-        </article>
+
+        <Link href={featured.link} className="featured-link">
+          <article className="featured-blog">
+            <BlogCard blog={featured} featured />
+          </article>
+        </Link>
 
         <section className="blog-grid">
           {rest.map((blog) => (
@@ -43,7 +48,7 @@ export default function Blogs() {
           ))}
         </section>
       </section>
- 
+
       <section className="cta-section">
         <div className="cta-box">
           <h2 className="cta-title">Get started for free</h2>

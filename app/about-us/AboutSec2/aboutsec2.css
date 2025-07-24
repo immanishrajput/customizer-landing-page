@@ -43,7 +43,8 @@
 }
 
 .why-card h3 {
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 1.4;
   font-weight: 500;
   color: #2B353B;
   margin-bottom: 15px;

@@ -36,7 +36,7 @@
 }
 
 .nav-links {
-    list-style: none;
+    list-style: none !important;
     display: flex;
     gap: 24px;
     margin: 0;
@@ -44,7 +44,7 @@
 }
 
 .nav-item {
-    font-size: 16px;
+    font-size: 17px;
     color: #1f1f1f;
     font-weight: 500;
     cursor: pointer;
@@ -64,21 +64,21 @@
 }
 
 .arrow-icon {
-    font-size: 16px;
+    font-size: 17px;
     transition: transform 0.3s ease;
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .login-btn {
     background: none;
     border: none;
     color: #1f1f1f;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -87,7 +87,7 @@
     background-color: #3559c7;
     color: white;
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 5px 10px;
     border: 2px solid #3559c7;
     border-radius: 6px;
     cursor: pointer;
